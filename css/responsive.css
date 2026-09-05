@@ -1,0 +1,133 @@
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        height: calc(100vh - 80px);
+        min-height: 600px;
+        
+        min-height: 65vh;
+
+        padding: 40px 20px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 16px;
+
+        line-height: 1.7;
+
+    }
+
+
+    .hero-subtitle {
+
+        font-size: 18px;
+
+    }
+
+
+}
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1000px) {
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+    .editor-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+    .hero-description {
+
+        font-size: 15px;
+
+    }
+
+    .editor-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .editor-tools {
+
+        flex-wrap: wrap;
+
+    }
+
+    textarea {
+
+        height: 400px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+
+        font-size: 36px;
+
+    }
+
+    .editor-container {
+
+        width: 95%;
+
+    }
+
+    .editor-title {
+
+        font-size: 23px;
+
+    }
+
+    .tool-btn {
+
+        width: 45px;
+
+        height: 40px;
+
+    }
+
+    .button-container button {
+
+        width: 100%;
+
+    }
+
+}

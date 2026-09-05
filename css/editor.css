@@ -1,0 +1,161 @@
+/* ==============================
+   EDITOR
+============================== */
+
+.editor-container{
+
+    width: 90%;
+
+    margin:15px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    scroll-margin-top: 30px;
+}
+
+.editor-box{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+}
+
+/* Header */
+
+.editor-header{
+
+    height: 45px;
+
+    padding:0 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid #30363d;
+
+}
+
+.editor-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:25px;
+
+    font-weight:600;
+
+}
+
+.editor-title i{
+
+    color:#3b82f6;
+
+}
+
+/* Tools */
+
+.editor-tools{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.tool-btn{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#21262d;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.tool-btn:hover{
+
+    background:#3b82f6;
+
+    transform:scale(1.08);
+
+}
+
+.danger:hover{
+
+    background:#ef4444;
+
+}
+
+/* Textarea */
+
+textarea{
+
+    width:100%;
+
+    height:430px;
+
+    padding:10px;
+
+    border:none;
+
+    outline:none;
+
+    resize:none;
+
+    background:#0d1117;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+    font-family:Consolas, monospace;
+
+}
+
+/* Footer */
+
+.editor-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:15px 20px;
+
+    border-top:1px solid #30363d;
+
+    color:#9ca3af;
+
+    font-size:14px;
+    
+  
+}

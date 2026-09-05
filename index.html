@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JSON Weaver</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+<div class="logo">
+    <img src="assets/json-weaver-logo.png" alt="JSON Weaver">
+</div>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#workspace">Compare</a></li>
+
+            <li><a href="#workspace">Repair</a></li>
+
+            <li><a href="#workspace">Merge</a></li>
+
+            <li><a href="#about">About</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                JSON WEAVER
+            </div>
+
+
+            <h1>Professional JSON<br>Toolkit</h1>
+
+
+            <p class="hero-subtitle">
+
+                For the PROs!!
+
+            </p>
+
+
+            <p class="hero-description">
+
+                Validate • Beautify • Compare • Merge • Repair JSON Easily
+
+            </p>
+
+
+            <a href="#workspace" class="get-started">
+
+                Get Started
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- ================= WORKSPACE ================= -->
+
+    <main id="workspace" class="workspace">
+
+
+        <!-- ================= EDITORS ================= -->
+
+        <section class="editor-container">
+
+
+            <!-- JSON A -->
+
+            <div class="editor-box">
+
+                <div class="editor-header">
+
+                    <div class="editor-title">
+
+                        <i class="fa-solid fa-file-code"></i>
+
+                        <span>JSON A</span>
+
+                    </div>
+
+
+                    <div class="editor-tools">
+
+                        <button class="tool-btn" id="uploadA">
+
+                            <i class="fa-solid fa-upload"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn" id="copyA">
+
+                            <i class="fa-solid fa-copy"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn" id="downloadA">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn danger" id="clearA">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn" id="beautifyA">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <textarea
+                    id="jsonA"
+                    placeholder="Paste your JSON here..."></textarea>
+
+
+                <input
+                    type="file"
+                    id="fileA"
+                    accept=".json"
+                    hidden>
+
+
+                <div class="editor-footer">
+
+                    <span id="charA">Characters : 0</span>
+
+                    <span id="lineA">Lines : 1</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- JSON B -->
+
+            <div class="editor-box">
+
+                <div class="editor-header">
+
+                    <div class="editor-title">
+
+                        <i class="fa-solid fa-file-code"></i>
+
+                        <span>JSON B</span>
+
+                    </div>
+
+
+                    <div class="editor-tools">
+
+                        <button class="tool-btn" id="uploadB">
+
+                            <i class="fa-solid fa-upload"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn" id="copyB">
+
+                            <i class="fa-solid fa-copy"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn" id="downloadB">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn danger" id="clearB">
+
+                            <i class="fa-solid fa-trash"></i>
+
+                        </button>
+
+
+                        <button class="tool-btn" id="beautifyB">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <textarea
+                    id="jsonB"
+                    placeholder="Paste your JSON here..."></textarea>
+
+
+                <input
+                    type="file"
+                    id="fileB"
+                    accept=".json"
+                    hidden>
+
+
+                <div class="editor-footer">
+
+                    <span id="charB">Characters : 0</span>
+
+                    <span id="lineB">Lines : 1</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACTION BUTTONS ================= -->
+
+        <section class="button-container">
+
+            <button id="validateBtn">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Validate
+
+            </button>
+
+
+            <button id="minifyBtn">
+
+                <i class="fa-solid fa-compress"></i>
+
+                Minify
+
+            </button>
+
+
+            <button id="compareBtn">
+
+                <i class="fa-solid fa-code-compare"></i>
+
+                Compare
+
+            </button>
+
+
+            <button id="mergeBtn">
+
+                <i class="fa-solid fa-code-merge"></i>
+
+                Merge
+
+            </button>
+
+            <button id="repairBtn">
+                 <i class="fa-solid fa-wrench"></i>
+                    Repair
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= OUTPUT POPUP ================= -->
+
+    <div class="output-modal" id="outputModal">
+
+        <div class="output-container">
+
+            <div class="output-header">
+
+                <h2 id="outputTitle">
+
+                    Output
+
+                </h2>
+
+
+                <button
+                    class="close-output"
+                    id="closeOutput">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <pre id="output">Result will appear here...</pre>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="about">
+
+        <p>
+
+            © 2026 JSON Weaver | Built with HTML, CSS & JavaScript
+
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/utils.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsonrepair/lib/umd/jsonrepair.js"></script>
+    <script src="js/beautify.js"></script>
+    <script src="js/repair.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/compare.js"></script>
+    <script src="js/merge.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
